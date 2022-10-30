@@ -1,0 +1,196 @@
+:root {
+    --container-color: rgb(245, 245, 250);
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100vh;
+    min-width: 950px;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+/*header part*/
+nav {
+    display: flex;
+    text-align: center;
+    flex-direction: row;
+    justify-content: flex-end;
+    height: 40px;
+    background-color: black;
+    box-shadow: 0 2px #9e9c9c
+}
+
+nav p {
+    position: absolute;
+    font-weight: 900;
+    font-size: 24px;
+    margin-top: 2px;
+    left: 10px;
+    color: #fff;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    padding: 10px 24px;
+}
+
+nav a:hover {
+    font-size: 18;
+    text-shadow: gray 2px 1px;
+}
+
+/*main part*/
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-left: 50px;
+}
+
+.sub-container {
+    background-color: rgba(245, 245, 250, 0.5);
+    margin: 20px;
+    padding: 10px 40px;
+    border-radius: 10px;
+    border: 1px solid rgba(137, 137, 228, 0.5);
+}
+
+.sub-container h1, 
+.sub-container h2 {
+    text-align: center;
+}
+
+.sub-container a{
+    text-decoration: none;
+    color:#07d;
+}
+
+.shopping {
+    margin: 20px 0;
+    text-align: center;
+}
+
+
+
+section {
+    display: flex;
+    flex-direction: column;
+}
+
+section .shop,
+section .delivery {
+    border: 1px solid rgb(0,0,0,0.5);
+    border-radius: 5px;
+    margin: 5px;
+    padding: 6px;
+}
+
+.shop {
+    display: flex;
+}
+
+.shop div,form {
+    text-align: left;
+    margin: 10px;
+}
+
+
+
+input[type=submit] {
+    width: 100px;
+    background-color: #09f;
+    color: white;
+    padding: 10px;
+    margin: 5px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #07d;
+}
+
+/* login part*/
+.btn {
+    cursor: pointer;
+    display: inline-block;
+    width: 100%;
+    background-color: #09f;
+    color: #fff;
+    margin: 20px 0;
+    padding: 15px;
+    font-size: 16px;
+    border: 0;
+    border-radius: 5px;
+}
+
+.btn:focus {
+    transform: scale(0.98);
+}
+
+.form-control {
+    position: relative;
+    margin: 20px 0 40px;
+    width: 300px;
+}
+
+.form-control input {
+    border: none;
+    border-bottom: 1px solid #09f;
+    width: 100%;
+    outline: 0;
+}
+
+.form-control input:focus {
+    border-bottom-color: lightblue;
+}
+
+.form-control label {
+    position: absolute;
+    color: #09f;
+    top: 0;
+    left: 0;
+}
+
+.form-control label span {
+    display: inline-block;
+    min-width: 5px;
+    transition: 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.form-control input:focus + label span,
+.form-control input:valid + label span{
+    color: lightblue;
+    transform: translateY(-16px);
+}
+
+/*footer part*/
+footer {
+    display: flex;
+    flex-direction: row-reverse;
+    background-color: rgb(245, 245, 250);
+}
+
+.contact a:hover {
+    color: #4395ff;
+}
+
+footer span {
+    font-weight: bold;
+    margin: 50px 50px;
+}
+
+.contact {
+    padding: 10px 20px;
+    text-align: center;
+}

@@ -1,0 +1,188 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100vh;
+    min-width: 950px;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+/*header part*/
+nav {
+    display: flex;
+    text-align: center;
+    flex-direction: row;
+    justify-content: flex-end;
+    height: 40px;
+    background-color: black;
+    box-shadow: 0 2px #9e9c9c
+}
+
+nav p {
+    position: absolute;
+    font-weight: 900;
+    font-size: 24px;
+    margin-top: 2px;
+    left: 10px;
+    color: #fff;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    padding: 10px 24px;
+}
+
+nav a:hover {
+    font-size: 18;
+    text-shadow: gray 2px 1px;
+}
+
+
+/*main part*/
+section {
+    display: flex;
+    flex-direction: row;
+}
+
+.productContainer {
+    margin: 20px;
+    border: 1px solid rgba(137, 137, 228, 0.5);
+    border-radius: 5px;
+}
+.container {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.container div {
+    margin: 20px;
+}
+
+.picture,
+.detail,
+.description {
+    display: block;
+    background-color: rgb(245, 245, 250);
+    border: 1px solid #eee;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.detail {
+    line-height: 36px;
+    width: 400px;
+}
+
+.picture {
+    display: flex;
+    flex-direction: column;
+}
+
+.description {
+    width: 700px;
+}
+
+.picture button {
+    background-color: #4395ff;
+    color: #fff;
+    cursor: pointer;
+    border: 0;
+    position: relative;
+    justify-content: center;
+    height: 32px;
+    width: 100px;
+    border-radius: 10px;
+    transition: 0.3s ease;
+}
+
+.picture button:hover {
+    width: 120px;
+}
+
+/* faq part */
+.faq-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 450px;
+    background-color: rgb(245, 245, 250);
+    margin: 20px;
+    border-radius: 20px;
+}
+
+
+.faq {
+    background-color: #f0f0f0;
+    border: 1px solid #9fa4a8;
+    border-radius: 10px;
+    margin: 10px 10px;
+    padding: 0 20px;
+    position: relative;
+    overflow: hidden;
+    transition: 0.3s ease;
+}
+
+.faq.active {
+    box-shadow: 0 8px 6px rgba(0, 0, 0, 0.1);
+}
+
+
+.faq-title {
+    padding-right: 10px;
+
+}
+
+.faq-text {
+    display: none;
+}
+
+.faq.active .faq-text {
+    display: block;
+}
+
+.faq-toggle {
+    background-color: transparent;
+    border: 1px solid #9fa4a8;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    padding: 0;
+    position: absolute;
+    top: 15px;
+    right: 10px;
+    height: 30px;
+    width: 30px;
+    transform: rotateX(180deg);
+}
+
+.faq.active .faq-toggle {
+    transform: none;
+}
+
+/*footer part*/
+footer {
+    display: flex;
+    flex-direction: row-reverse;
+    background-color: rgb(245, 245, 250);
+}
+
+.contact a:hover {
+    color: #4395ff;
+}
+
+footer span {
+    font-weight: bold;
+    margin: 50px 50px;
+}
+
+.contact {
+    padding: 10px 20px;
+    text-align: center;
+}
