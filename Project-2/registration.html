@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Registration</title>
+    <link rel="stylesheet" href="registration.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="navBar"><a href="index.html">Home</a></div>
+            <div class="navBar"><a href="login.html">Sign in</a></div>
+            <div class="navBar"><a href="registration.html">Sign up</a></div>
+            <div class="navBar"><a href="user.html">User</a></div>
+        </nav>
+    </header>
+    <section>
+        <div class="signup">
+            <h1>Sign up to create a account</h1>
+            <form method="post" action="http://localhost:3000/registration.html">
+                <div class="form-control">
+                    <label for="username">Username: </label>
+                    <input type="text" name="username">
+                </div>
+                <div class="form-control">                
+                    <label for="password">Enter Passwrod: </label>
+                    <input type="text" name="password">
+                </div>
+
+                <div class="form-control">
+                    <label for="repassword">Confirm Password: </label>
+                    <input type="text" name="repassword">
+                </div>
+
+                <input type="submit" value="Sign up">
+            </form>
+        </div>
+    </section>
+    <footer>
+        By Weijie Zheng
+    </footer>
+</body>
+</html>

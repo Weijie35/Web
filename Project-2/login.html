@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Log In</title>
+    <link rel="icon" href="data:;base64,=">
+    <link rel="stylesheet" href="login.css">
+    <script src="login.js" defer></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="navBar"><a href="index.html">Home</a></div>
+            <div class="navBar"><a href="login.html">Sign in</a></div>
+            <div class="navBar"><a href="registration.html">Sign up</a></div>
+            <div class="navBar"><a href="user.html">User</a></div>
+        </nav>
+    </header>
+    <section>
+        <div class="intro-card">
+            <div style="background-image: url(Picture/photo4.jpg)"></div>
+            <h1 class="text"></h1>
+            <h2 class="text_2"></h2>
+        </div>
+        <div class="login">
+            <h1>Sign in</h1>
+            <form method="post" action="http://localhost:3000">
+                <input class="loginInput" type="text" name="username" id="username" Placeholder="Username" required>
+                <input class="loginInput" type="password" name="password" id="password" Placeholder="Password" required>
+                <input class="btn" type="submit" value="Sign in">
+            </form>
+            <div class="regi"><a href="registration.html">Register</a></div>
+        </div>
+    </section>
+    <footer>
+        By Weijie Zheng
+    </footer>
+</body>
+</html>

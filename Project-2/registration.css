@@ -1,0 +1,127 @@
+:root{
+    --back-ground-color: #c2e79d
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-width: 900px;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background: linear-gradient(45deg,#8dc753,#c2e79d); 
+    background-color: var(--back-ground-color);
+    color: #fff;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+header {
+    display: flex;
+    justify-content: flex-start;
+    height: 48px;
+    color: rgb(184, 130, 130);
+}
+
+nav {
+    display: flex;
+    padding: 10px 24px;
+}
+
+.navBar {
+    font-weight: bold;
+    font-size: 18px;
+    margin-right: 20px;
+    line-height: 28px;
+    text-shadow: #111 1px 1px;
+    text-align: center;
+    padding-right: 10px;
+    border-right: 1px solid #fff;
+}
+
+/*section part */
+section {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height: 85vh;
+    background-image: url(Picture/photo5.jpg);
+    background-size: cover;
+}
+
+.signup {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 500px;
+    height: 400px;
+    background-color: rgba(88, 70, 70, 0.5);
+    margin-top: 50px;
+    padding: 10px 20px;
+    border: #fff solid 1px ;
+    border-radius: 10px;
+    box-shadow: 0 0 1px 1px rgba(0,0,0,0.1);;
+}
+
+.signup h1 {
+    margin-top: 2rem;
+}
+
+
+.signup form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.signup label {
+    width: 20%;
+}
+
+.form-control {
+    display: flex;
+    flex-direction: row;
+}
+
+.form-control input[type=text]{
+    width: 80%;
+    height: 40px;
+    margin-bottom: 20px;
+    border: none;
+    background-color: #fff;
+    border-bottom: 1px solid #8ec5fc;
+    outline: 0;
+}
+
+
+input[type=submit] {
+    display: inline-block;
+    position: relative;
+    left: 15%;
+    width: 70%;
+    background-color: #8ec5fc;
+    color: #fff;
+    margin-top: 50px;
+    padding: 10px;
+    font-size: 16px;
+    border: 0;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+input[type=submit]:focus {
+    transform: scale(0.98);
+}
+
+input[type=submit]:hover {
+    background-color: #73aee9;
+    transform: scale(0.98);
+}
+
+footer {
+    position:absolute;
+    bottom: 0;
+}
